@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "StartDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "EndDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "ProjectStatues": {
+      "type": "enumeration",
+      "enum": [
+        "morning",
+        "noon ",
+        "evening"
+      ],
+      "required": true
+    }
+  }
+}

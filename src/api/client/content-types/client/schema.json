@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cliendLogo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ClientInformation": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "ClientInformationSummary": {
+      "type": "text",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "Active": {
+      "type": "boolean",
+      "required": true
+    },
+    "phoneNumber": {
+      "required": true,
+      "type": "integer"
+    },
+    "twitterLink": {
+      "type": "string"
+    },
+    "websiteLink": {
+      "type": "string"
+    },
+    "facebookLink": {
+      "type": "string"
+    }
+  }
+}

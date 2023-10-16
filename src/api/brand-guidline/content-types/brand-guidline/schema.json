@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_guidlines",
+  "info": {
+    "singularName": "brand-guidline",
+    "pluralName": "brand-guidlines",
+    "displayName": "Brand Guidline"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

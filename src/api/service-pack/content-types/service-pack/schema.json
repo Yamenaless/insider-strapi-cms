@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_packs",
+  "info": {
+    "singularName": "service-pack",
+    "pluralName": "service-packs",
+    "displayName": "Service Pack",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true,
+      "unique": false
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service",
+      "mappedBy": "service_pack"
+    }
+  }
+}

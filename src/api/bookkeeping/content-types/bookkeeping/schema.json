@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookkeepings",
+  "info": {
+    "singularName": "bookkeeping",
+    "pluralName": "bookkeepings",
+    "displayName": "Bookkeeping"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
